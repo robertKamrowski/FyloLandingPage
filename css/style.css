@@ -50,6 +50,12 @@ html h6 {
   font-family: "Raleway";
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -90,6 +96,47 @@ html h6 {
 
 .main__intro {
   margin-top: 48px;
+}
+
+.main__facts {
+  margin-top: 120px;
+}
+
+.facts {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-fact {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.single-fact__image {
+  width: 80px;
+}
+.single-fact__title {
+  margin-top: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.single-fact__description {
+  margin-top: 8px;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.1rem;
+}
+
+.single-fact:nth-of-type(1) {
+  margin-top: 0;
 }
 
 body {

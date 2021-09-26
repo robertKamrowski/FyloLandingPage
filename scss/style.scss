@@ -1,7 +1,9 @@
 @use 'variables';
 @use 'globals';
 @use 'header';
+@use 'main';
 @use 'intro';
+@use 'companyFacts';
 
 body {
   background-color: variables.$mainDarkBlue;
