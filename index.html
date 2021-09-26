@@ -9,8 +9,51 @@
       rel="stylesheet"
     />
     <title>FyloWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div>works</div>
+    <!-- header component -->
+    <header class="header">
+      <img src="./images/logo.svg" alt="Logo image" class="header__logo" />
+
+      <nav class="header__navigation">
+        <menu class="header__menu">
+          <li class="header__list-item">
+            <a href="#" class="header__link">Features</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__link">Team</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__link">Sign In</a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+    <!-- header component -->
+
+    <!-- main component  -->
+    <main class="main">
+      <!-- Entrance section component -->
+      <section class="intro main__intro">
+        <img
+          src="./images/illustration-intro.png"
+          alt="Intro image"
+          class="intro__image"
+        />
+        <h1 class="intro__title">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="intro__description">
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+
+        <button class="intro__start-button">Get Started</button>
+      </section>
+      <!-- Entrance section component -->
+    </main>
+    <!-- main component  -->
   </body>
 </html>

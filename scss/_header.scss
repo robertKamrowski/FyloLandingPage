@@ -1,0 +1,36 @@
+@use 'variables';
+
+.header {
+  margin: 24px 24px 0 20px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 80px;
+    height: 24px;
+  }
+
+  &__navigation {
+    flex-basis: 50%;
+  }
+
+  &__menu {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: variables.$white;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-family: 'Raleway';
+  }
+}

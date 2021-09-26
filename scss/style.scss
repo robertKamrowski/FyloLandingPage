@@ -1,0 +1,9 @@
+@use 'variables';
+@use 'globals';
+@use 'header';
+@use 'intro';
+
+body {
+  background-color: variables.$mainDarkBlue;
+  color: variables.$white;
+}
