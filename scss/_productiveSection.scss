@@ -1,0 +1,54 @@
+@use 'variables';
+
+.main__productive {
+  margin-top: 160px;
+}
+
+.productive {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    display: block;
+    width: 304px;
+  }
+
+  &__title {
+    margin-top: 48px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway';
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-top: 16px;
+  }
+
+  &__link {
+    display: block;
+    align-self: flex-start;
+    margin-top: 16px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: variables.$cyan;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+
+  &__arrow {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+  }
+}

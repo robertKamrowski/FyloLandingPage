@@ -4,6 +4,7 @@
 @use 'main';
 @use 'intro';
 @use 'companyFacts';
+@use 'productiveSection';
 
 body {
   background-color: variables.$mainDarkBlue;
