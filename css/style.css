@@ -193,6 +193,13 @@ html h6 {
 
 .comments {
   width: 280px;
+  position: relative;
+}
+.comments__quotes {
+  display: block;
+  position: absolute;
+  width: 32px;
+  transform: translate(20%, -70%);
 }
 .comments__single-comment {
   min-height: 160px;

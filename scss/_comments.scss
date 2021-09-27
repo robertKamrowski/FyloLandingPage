@@ -6,6 +6,14 @@
 
 .comments {
   width: 280px;
+  position: relative;
+
+  &__quotes {
+    display: block;
+    position: absolute;
+    width: 32px;
+    transform: translate(20%, -70%);
+  }
 
   &__single-comment {
     min-height: 160px;
