@@ -1,0 +1,57 @@
+@use 'variables';
+
+.main__comments {
+  margin-top: 193px;
+}
+
+.comments {
+  width: 280px;
+
+  &__single-comment {
+    min-height: 160px;
+    width: 100%;
+    background-color: variables.$opinionsDarkBlue;
+    padding: 24px 20px 21px 20px;
+    margin-top: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+  }
+  &__single-comment:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  &__content {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    opacity: 0.8;
+  }
+
+  &__author-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__author-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  &__author-info {
+    margin-left: 8px;
+  }
+
+  &__author-name {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  &__author-company {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+  }
+}

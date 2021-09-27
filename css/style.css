@@ -187,6 +187,55 @@ html h6 {
   margin-left: 4px;
 }
 
+.main__comments {
+  margin-top: 193px;
+}
+
+.comments {
+  width: 280px;
+}
+.comments__single-comment {
+  min-height: 160px;
+  width: 100%;
+  background-color: #202a3c;
+  padding: 24px 20px 21px 20px;
+  margin-top: 24px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+}
+.comments__single-comment:nth-of-type(1) {
+  margin-top: 0;
+}
+.comments__content {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  opacity: 0.8;
+}
+.comments__author-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.comments__author-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.comments__author-info {
+  margin-left: 8px;
+}
+.comments__author-name {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.comments__author-company {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+}
+
 body {
   background-color: #181f2a;
   color: #fff;
