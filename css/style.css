@@ -243,6 +243,63 @@ html h6 {
   letter-spacing: 0.5px;
 }
 
+.main__access {
+  margin-top: 200px;
+}
+
+.access {
+  width: 336px;
+  height: 353px;
+  padding: 40px 28px 37px 28px;
+  background-color: #1c2431;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.access__title {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.access__content {
+  margin-top: 16px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  text-align: center;
+}
+.access__form {
+  margin-top: 32px;
+}
+.access__email {
+  width: 100%;
+  border-radius: 24px;
+  height: 48px;
+  border: 0;
+  padding: 19px 20px 15px 20px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #c0c0c0;
+}
+.access__email::placeholder {
+  color: #c0c0c0;
+}
+.access__email:focus {
+  outline: 0;
+}
+.access__submit-btn {
+  height: 48px;
+  width: 100%;
+  border-radius: 24px;
+  color: #fff;
+  border: 0;
+  margin-top: 24px;
+  background: linear-gradient(132.02deg, #63e1d9 -31.85%, #34a0cd 100%);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+}
+
 body {
   background-color: #181f2a;
   color: #fff;

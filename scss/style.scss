@@ -6,6 +6,7 @@
 @use 'companyFacts';
 @use 'productiveSection';
 @use 'comments';
+@use 'access';
 
 body {
   background-color: variables.$mainDarkBlue;
