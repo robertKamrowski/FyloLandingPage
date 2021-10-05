@@ -1,12 +1,13 @@
 @use 'variables';
 
 .header {
-  padding: 24px 24px 0 20px;
+  padding: 24px 24px 24px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 999;
+
   &__logo {
     width: 80px;
     height: 24px;
@@ -32,5 +33,33 @@
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-family: 'Raleway';
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 40px 50px;
+
+    &__logo {
+      width: 176px;
+      height: 52px;
+      margin-left: 30px;
+    }
+
+    &__navigation {
+      flex-basis: 250px;
+    }
+    &__link {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      transition: 0.3s;
+      width: 83.3px;
+      text-align: center;
+    }
+    &__link:hover {
+      transform: scale(1.15);
+      font-weight: bold;
+      text-decoration: underline;
+    }
   }
 }
