@@ -1,0 +1,114 @@
+@use 'variables';
+
+.footer {
+  width: 100%;
+  padding: 259px 28px 52px 28px;
+  background-color: variables.$footerDarkBlue;
+
+  &__content-wrapper {
+    max-width: 319px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 108px;
+  }
+
+  &__contact {
+    margin-top: 35px;
+    width: 100%;
+    min-height: 176px;
+  }
+
+  &__location,
+  &__phone-contact,
+  &__mail {
+    display: flex;
+  }
+
+  &__location-pin-icon,
+  &__phone-contact-icon,
+  &__mail-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  &__location-pin-icon:nth-of-type(1) {
+    margin-right: 26px;
+  }
+
+  &__location-description,
+  &__phone-number,
+  &__mail-content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  &__phone-contact {
+    margin: 16px 0 16px 0;
+  }
+
+  &__about-us-buttons {
+    margin-top: 56px;
+  }
+  &__privacy-buttons {
+    margin-top: 48px;
+  }
+
+  &__links-list {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: variables.$white;
+    margin-top: 16px;
+  }
+
+  &__link--first {
+    margin-top: 0;
+  }
+
+  &__socials {
+    margin: 56px auto 0 auto;
+  }
+}
+
+// socials single component component:
+.socials {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    color: unset;
+    cursor: pointer;
+    display: block;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+
+  &__icon:hover {
+    color: variables.$cyan;
+    border-color: variables.$cyan;
+  }
+}

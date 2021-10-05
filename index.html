@@ -8,11 +8,18 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>FyloWeb</title>
+
     <link rel="stylesheet" href="css/style.css" />
+    <title>FyloWeb</title>
+    <script
+      src="https://kit.fontawesome.com/c80f31871f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <!-- header component -->
+    <div class="background"></div>
+
     <header class="header">
       <img src="./images/logo.svg" alt="Logo image" class="header__logo" />
 
@@ -30,11 +37,8 @@
         </menu>
       </nav>
     </header>
-    <!-- header component -->
 
-    <!-- main component  -->
     <main class="main">
-      <!-- Entrance  component -->
       <section class="intro main__intro">
         <img
           src="./images/illustration-intro.png"
@@ -52,9 +56,7 @@
 
         <button class="intro__start-button">Get Started</button>
       </section>
-      <!-- Entrance  component -->
 
-      <!-- Company info component -->
       <section class="facts main__facts">
         <section class="single-fact">
           <img
@@ -109,7 +111,6 @@
           </p>
         </section>
       </section>
-      <!-- Company info component -->
 
       <section class="productive main__productive">
         <img
@@ -139,7 +140,6 @@
         </a>
       </section>
 
-      <!-- Comments section -->
       <section class="comments main__comments">
         <img src="./images/bg-quotes.png" class="comments__quotes" />
         <div class="comments__single-comment">
@@ -200,9 +200,7 @@
           </div>
         </div>
       </section>
-      <!-- Comments section -->
 
-      <!-- early access section -->
       <section class="access main__access">
         <h2 class="access__title">Get early access today</h2>
         <p class="access__content">
@@ -221,8 +219,95 @@
           <button class="access__submit-btn">Get Started For Free</button>
         </form>
       </section>
-      <!-- early access section -->
     </main>
-    <!-- main component  -->
+
+    <footer class="footer">
+      <div class="footer__content-wrapper">
+        <img class="footer__logo" src="./images/logo.svg" alt="Company logo" />
+
+        <section class="footer__contact">
+          <div class="footer__location">
+            <img
+              src="./images/icon-location.svg"
+              alt="Location pin"
+              class="footer__location-pin-icon"
+            />
+            <p class="footer__location-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+
+          <div class="footer__phone-contact">
+            <img
+              src="./images/icon-phone.svg"
+              alt="Phone icon"
+              class="footer__phone-contact-icon"
+            />
+            <p class="footer__phone-number">123 123 123</p>
+          </div>
+
+          <div class="footer__mail">
+            <img
+              src="./images/icon-email.svg"
+              alt="Mail icon"
+              class="footer__mail-icon"
+            />
+            <p class="footer__mail-content">example@email.com</p>
+          </div>
+        </section>
+
+        <section class="footer__about-us-buttons">
+          <ul class="footer__links-list">
+            <li class="footer__list-item">
+              <a href="" class="footer__link footer__link--first">About Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__link">Jobs</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__link">Press</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__link">Blog</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer__privacy-buttons">
+          <ul class="footer__links-list">
+            <li class="footer__list-item">
+              <a href="" class="footer__link footer__link--first">Contact Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="" class="footer__link">Privacy</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="socials footer__socials">
+          <div class="socials__icon">
+            <a href="#" class="socials__link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+
+          <div class="socials__icon">
+            <a href="#" class="socials__link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+
+          <div class="socials__icon">
+            <a href="#" class="socials__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

@@ -19,19 +19,36 @@ html h6 {
   font-family: "Raleway";
 }
 
+body {
+  position: relative;
+}
+
+.background {
+  background-color: #1c2431;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: 0;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
 .header {
-  margin: 24px 24px 0 20px;
-  height: 24px;
+  padding: 24px 24px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 999;
 }
 .header__logo {
   width: 80px;
   height: 24px;
 }
 .header__navigation {
-  flex-basis: 50%;
+  flex-basis: 150px;
 }
 .header__menu {
   width: 100%;
@@ -54,6 +71,12 @@ html h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 337px;
+  position: relative;
+}
+
+.main__intro {
+  padding-top: 48px;
 }
 
 .intro {
@@ -92,10 +115,6 @@ html h6 {
   border: none;
   border-radius: 24px;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
-}
-
-.main__intro {
-  margin-top: 48px;
 }
 
 .main__facts {
@@ -244,7 +263,10 @@ html h6 {
 }
 
 .main__access {
-  margin-top: 200px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
 }
 
 .access {
@@ -298,6 +320,96 @@ html h6 {
   margin-top: 24px;
   background: linear-gradient(132.02deg, #63e1d9 -31.85%, #34a0cd 100%);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+}
+
+.footer {
+  width: 100%;
+  padding: 259px 28px 52px 28px;
+  background-color: #0b1523;
+}
+.footer__content-wrapper {
+  max-width: 319px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  width: 108px;
+}
+.footer__contact {
+  margin-top: 35px;
+  width: 100%;
+  min-height: 176px;
+}
+.footer__location, .footer__phone-contact, .footer__mail {
+  display: flex;
+}
+.footer__location-pin-icon, .footer__phone-contact-icon, .footer__mail-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.footer__location-pin-icon:nth-of-type(1) {
+  margin-right: 26px;
+}
+.footer__location-description, .footer__phone-number, .footer__mail-content {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.footer__phone-contact {
+  margin: 16px 0 16px 0;
+}
+.footer__about-us-buttons {
+  margin-top: 56px;
+}
+.footer__privacy-buttons {
+  margin-top: 48px;
+}
+.footer__links-list {
+  list-style: none;
+}
+.footer__link {
+  text-decoration: none;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #fff;
+  margin-top: 16px;
+}
+.footer__link--first {
+  margin-top: 0;
+}
+.footer__socials {
+  margin: 56px auto 0 auto;
+}
+
+.socials {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials__link {
+  color: unset;
+  cursor: pointer;
+  display: block;
+}
+.socials__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.socials__icon:hover {
+  color: #65e2d9;
+  border-color: #65e2d9;
 }
 
 body {

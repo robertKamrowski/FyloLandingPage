@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'globals';
+@use 'backgrounds';
 @use 'header';
 @use 'main';
 @use 'intro';
@@ -7,6 +8,7 @@
 @use 'productiveSection';
 @use 'comments';
 @use 'access';
+@use 'footer';
 
 body {
   background-color: variables.$mainDarkBlue;
