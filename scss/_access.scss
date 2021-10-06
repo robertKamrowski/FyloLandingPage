@@ -65,6 +65,18 @@
     background: linear-gradient(132.02deg, #63e1d9 -31.85%, #34a0cd 100%);
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
   }
+  &__error-msg {
+    display: none;
+    position: absolute;
+    left: 30px;
+    bottom: -25px;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  &__error-msg--visible {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
