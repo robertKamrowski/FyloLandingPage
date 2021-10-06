@@ -35,6 +35,11 @@ body {
   background-size: 100%;
 }
 
+@media (min-width: 1024px) {
+  .background {
+    height: 1200px;
+  }
+}
 .header {
   padding: 24px 24px 24px 20px;
   display: flex;
