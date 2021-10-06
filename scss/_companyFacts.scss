@@ -41,3 +41,53 @@
 .single-fact:nth-of-type(1) {
   margin-top: 0;
 }
+
+@media (min-width: 1024px) {
+  .main__facts {
+    margin-top: 158px;
+  }
+
+  .facts {
+    width: 880px;
+    height: 500px;
+    display: block;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    position: relative;
+  }
+
+  .single-fact {
+    width: 350px;
+    height: 214px;
+    position: absolute;
+
+    &__image {
+      width: 104px;
+    }
+
+    &__title {
+      margin-top: 16px;
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+
+    &--first {
+      top: 0;
+      left: 0;
+    }
+    &--second {
+      top: 0;
+      right: 0;
+      margin: 0;
+    }
+    &--third {
+      bottom: 0;
+      left: 0;
+    }
+    &--fourth {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
