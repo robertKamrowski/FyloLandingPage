@@ -66,3 +66,74 @@
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
   }
 }
+
+@media (min-width: 1024px) {
+  .access {
+    width: 750px;
+    height: 275px;
+    &__title {
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+    }
+    &__content {
+      width: 85%;
+    }
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      position: relative;
+    }
+    &__email {
+      margin: 0;
+      flex-basis: 60%;
+      font-size: 1.6rem;
+    }
+    &__submit-btn {
+      margin: 0;
+      flex-basis: 30%;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-weight: bold;
+      position: relative;
+    }
+    &__submit-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(#8adae3, #8adae3);
+      transition: opacity 0.3s;
+      border-radius: 24px;
+      opacity: 0;
+    }
+
+    &__submit-btn::after {
+      content: 'Start For Free';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    &__submit-btn:hover::before {
+      opacity: 1;
+    }
+
+    &__error-msg {
+      display: none;
+      position: absolute;
+      left: 30px;
+      bottom: -25px;
+      color: red;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    &__error-msg--visible {
+      display: block;
+    }
+  }
+}
