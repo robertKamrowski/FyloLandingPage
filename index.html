@@ -250,16 +250,20 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <form class="access__form">
+        <form id="form" class="access__form">
           <input
             type="text"
             name="email"
-            id="emial"
+            id="email"
             placeholder="emial@example.com"
             class="access__email"
           />
-          <button class="access__submit-btn">Start For Free</button>
-          <span class="access__error-msg">Error, please check your email</span>
+          <button type="submit" id="form__btn" class="access__submit-btn">
+            Start For Free
+          </button>
+          <span id="form__error-message" class="access__error-msg"
+            >Error, please check your email</span
+          >
         </form>
       </section>
     </main>
@@ -353,4 +357,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
