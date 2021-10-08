@@ -524,6 +524,7 @@ body {
 }
 .access__form {
   margin-top: 32px;
+  position: relative;
 }
 .access__email {
   width: 100%;
@@ -554,9 +555,12 @@ body {
 .access__error-msg {
   display: none;
   position: absolute;
-  left: 30px;
-  bottom: -25px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
   color: red;
+  text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -580,7 +584,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    position: relative;
   }
   .access__email {
     margin: 0;
@@ -621,8 +624,8 @@ body {
   .access__error-msg {
     display: none;
     position: absolute;
-    left: 30px;
-    bottom: -25px;
+    top: 130%;
+    left: 20%;
     color: red;
     font-size: 1.2rem;
     font-weight: bold;
